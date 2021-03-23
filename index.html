@@ -1,41 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
         <title>Roselyn Le</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <!-- Font Awesome Icons -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+            integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+            crossorigin="anonymous"
+        />
     </head>
-    <nav>
-        <ul id="navbar">
-          <li><a href="#about-section">About</a> </li>
-          <li><a href="#skills-section">Skills</a></li>
-          <li><a href="#projects-section">Projects</a></li>
-          <li><a href="#links-section">Links</a></li>
-        </ul>
-    </nav>
+
     <body>
-        <div id="about-section">
-            <h1>Roselyn Le</h1>
-            <p>Hi I'm Roselyn, I am a trainee full stack developer currently undertaking a coding course with Futureproof.
-            </p>
-        </div>
-      
-        <div id="skills-section">
-            <h2>Skills</h2>
-            <p>Coming soon</p>
-        </div>
-      
-        <div id="projects-section">
-            <h2>Projects</h2>
-            <p>Coming soon</p>
-        </div>
-    
-        <div id="links-section">
-            <h2>Links</h2>
-            <p>Contact me via the following channels</p>
-            <a id="github-link" href="https://github.com/roselynle" target="_blank" class="contact-details">GitHub</a>
-            <a id="linkedin-link" href="https://www.linkedin.com/in/roselynle/" target="_blank" class="contact-details">LinkedIn</a>
-        </div>
+        <!-- Intro Section / Background -->
+        <header id="home" class="background">
+            <div class="container text-center">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h1 id="name">Roselyn</h1>
+                        <h1 id="pronounce">ros-a-lyn [noun]</h1>
+                        <p id="definition">
+                            A passionate, ambitious junior developer and<br />recent
+                            graduate of the Futureproof coding bootcamp
+                        </p>
+                        <a id="main-btn" class="scroll" href="#content">
+                            VIEW MY WORK</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About Me -->
+        <section id="about" class="row text-center">
+            <div class="col-12">
+                <h2 class="pt-4">About Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2">
+                    <img class="" src="" alt="Roselyn's Profile Photo" />
+                </div>
+                <div
+                    id="about-para"
+                    class="col-sm-8 offset-sm-2 col-md-7 offset-md-0 col-lg-6 pl-5 text-left"
+                >
+                    <h3 class="pt-2">
+                        Hi I'm Roselyn, and I recently graduated as a trainee
+                        Full Stack Developer with Futureproof.
+                    </h3>
+                    <p>
+                        I am based in London, UK and would describe myself as
+                        someone who always has a positive attitude and is up for
+                        a challenge.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-10 offset-sm-1">
+                <h2 class="pb-5">Skills</h2>
+            </div>
+            <div class="col-sm-3 col-lg-2 offset-lg-2">
+                <i class="fas fa-code" style="font-size: 36px"></i>
+                <p class="pt-3">HTML & CSS</p>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+                <i class="fab fa-js" style="font-size: 36px"></i>
+                <p class="pt-3">JavaScript</p>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+                <i class="fab fa-python" style="font-size: 36px"></i>
+                <p class="pt-3">Python</p>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+                <i class="fas fa-database" style="font-size: 36px"></i>
+                <p class="pt-3">PostgreSQL & MongoDB</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="row text-center">
+            <div class="col-12">
+                <h2 class="pt-4 pb-4">Projects</h2>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="row text-center">
+            <div class="col-12">
+                <h2 class="pt-4 pb-4">Contact</h2>
+                <p>
+                    Feel free to get in touch with me via the following
+                    channels:
+                </p>
+                <a
+                    id="github-link"
+                    href="https://github.com/roselynle"
+                    target="_blank"
+                    class="fab fa-github"
+                    style="font-size: 45px"
+                ></a>
+                <a
+                    id="linkedin-link"
+                    href="https://www.linkedin.com/in/roselynle/"
+                    target="_blank"
+                    class="fab fa-linkedin"
+                    style="font-size: 45px"
+                ></a>
+                <a
+                    id="email-link"
+                    href="mailto:roselynle95@gmail.com?Subject=Add Subject"
+                    class="fa fa-envelope-square"
+                    style="font-size: 45px"
+                ></a>
+            </div>
+        </footer>
     </body>
 </html>

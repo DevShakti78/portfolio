@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Shippori+Mincho+B1&display=swap");
+
+/* Main styling */
+html,
+body {
+    height: 100%; /* Fullscreen BG */
+    width: 100%;
+}
+body {
+    color: #394c4a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+#main-btn {
+    border: rgb(255, 175, 151) solid 1px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    padding: 10px 16px 9px;
+    border-radius: 5px;
+}
+
+#main-btn:focus,
+#main-btn:hover {
+    background-color: rgb(255, 164, 128);
+    color: #fffefd;
+}
+
+/* Intro section */
+#name {
+    font-size: 4.5rem;
+    color: rgb(255, 164, 128);
+    font-weight: 500;
+    padding-bottom: 0.9rem;
+    font-family: "Shippori Mincho B1", serif;
+}
+
+#pronounce {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: rgb(255, 164, 128);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-family: "Shippori Mincho B1", serif;
+}
+
+#definition {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Background */
+.background {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)
+        ),
+        url("../images/background.jpg") center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    min-height: 510px;
+    position: relative;
+    width: 100%;
+}
+.background .container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.background .row {
+    padding-bottom: 45px;
+}
