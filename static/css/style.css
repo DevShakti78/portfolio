@@ -79,3 +79,35 @@ p {
 .background .row {
     padding-bottom: 45px;
 }
+
+/* animate bottom */
+#name,
+#pronounce,
+#definition,
+#main-btn {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 2s;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+}
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+@keyframes animatebottom {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
