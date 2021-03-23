@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Roselyn Le</title>
-        <link href="static/css/style.css" rel="stylesheet" type="text/css" />
         <!-- Bootstrap -->
         <link
             rel="stylesheet"
@@ -19,6 +18,8 @@
             integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
             crossorigin="anonymous"
         />
+        <!-- CSS -->
+        <link href="static/css/style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -33,13 +34,14 @@
                             A passionate, ambitious junior developer and<br />recent
                             graduate of the Futureproof coding bootcamp
                         </p>
-                        <a id="main-btn" class="scroll" href="#content">
+                        <a id="main-btn" class="scroll" href="#about">
                             VIEW MY WORK</a
                         >
                     </div>
                 </div>
             </div>
         </header>
+
         <!-- About Me -->
         <section id="about" class="row text-center">
             <div class="col-12">
@@ -47,7 +49,14 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2">
-                    <img class="" src="" alt="Roselyn's Profile Photo" />
+                    <img
+                        class="img-fluid pt-3 pr-1 profile"
+                        src=""
+                        alt="Roselyn's Profile Photo"
+                    />
+                    <p id="img-caption">
+                        if (you == Roselyn) {<br /><span id="spin"></span> }
+                    </p>
                 </div>
                 <div
                     id="about-para"
@@ -66,6 +75,7 @@
             </div>
 
             <div class="col-sm-10 offset-sm-1">
+                <hr class="line" />
                 <h2 class="pb-5">Skills</h2>
             </div>
             <div class="col-sm-3 col-lg-2 offset-lg-2">

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Shippori+Mincho+B1&display=swap");
 
 /* Main styling */
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     height: 100%; /* Fullscreen BG */
@@ -80,7 +84,7 @@ p {
     padding-bottom: 45px;
 }
 
-/* animate bottom */
+/* Animate Bottom */
 #name,
 #pronounce,
 #definition,
@@ -110,4 +114,28 @@ p {
         bottom: 0;
         opacity: 1;
     }
+}
+
+/* About Me section */
+#about {
+    background-color: #fffefd;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(8, 33, 30, 0.5);
+}
+
+.line {
+    border-top: 2px solid rgb(255, 192, 173);
+}
+
+h2 {
+    font-family: "Shippori Mincho B1", serif;
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    color: #9da7a6;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
