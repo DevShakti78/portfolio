@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <title>Roselyn Le</title>
-        <link href="static/css/style.css" rel="stylesheet" type="text/css" />
         <!-- Bootstrap -->
         <link
             rel="stylesheet"
@@ -19,13 +18,15 @@
             integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
             crossorigin="anonymous"
         />
+        <!-- CSS -->
+        <link href="static/css/style.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
         <!-- Intro Section / Background -->
         <header id="home" class="background">
             <div class="container text-center">
-                <div class="row text-center">
+                <div class="row">
                     <div class="col-12">
                         <h1 id="name">Roselyn</h1>
                         <h1 id="pronounce">ros-a-lyn [noun]</h1>
@@ -33,95 +34,327 @@
                             A passionate, ambitious junior developer and<br />recent
                             graduate of the Futureproof coding bootcamp
                         </p>
-                        <a id="main-btn" class="scroll" href="#content">
+                        <a id="main-btn" class="scroll" href="#about">
                             VIEW MY WORK</a
                         >
                     </div>
                 </div>
             </div>
         </header>
+
         <!-- About Me -->
-        <section id="about" class="row text-center">
-            <div class="col-12">
-                <h2 class="pt-4">About Me</h2>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2">
-                    <img class="" src="" alt="Roselyn's Profile Photo" />
+        <div class="container-fluid text-center">
+            <section id="about" class="row">
+                <div class="col-12">
+                    <h2 class="pt-4">About Me</h2>
                 </div>
-                <div
-                    id="about-para"
-                    class="col-sm-8 offset-sm-2 col-md-7 offset-md-0 col-lg-6 pl-5 text-left"
-                >
-                    <h3 class="pt-2">
-                        Hi I'm Roselyn, and I recently graduated as a trainee
-                        Full Stack Developer with Futureproof.
-                    </h3>
+                <div class="row">
+                    <div
+                        class="col-12 col-md-3 offset-md-1 col-lg-2 offset-lg-2"
+                    >
+                        <img
+                            class="img-fluid pt-3 pr-1 profile"
+                            src="static/images/roselyn.png"
+                            alt="Roselyn's Profile Photo"
+                        />
+                        <p id="img-caption">
+                            if (you == Roselyn) {<br /><span id="spin"></span> }
+                        </p>
+                    </div>
+                    <div
+                        id="about-para"
+                        class="col-sm-8 offset-sm-2 col-md-7 offset-md-0 col-lg-6 pl-5 text-left"
+                    >
+                        <h3 class="pt-2">
+                            Hi I'm Roselyn, and I recently graduated as a
+                            trainee Full Stack Developer with Futureproof.
+                        </h3>
+                        <p>
+                            I am based in London, UK and would describe myself
+                            as someone who always has a positive attitude and is
+                            up for a challenge. Prior to my training with
+                            Futureproof, I qualified as a Chartered Accountant
+                            during my three years in audit. Outside of web
+                            development, I love to travel and experience
+                            different cultures, having been to almost 30
+                            countries so far.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 offset-sm-1">
+                    <hr class="line" />
+                    <h2 class="pb-5">Skills</h2>
+                </div>
+                <div class="col-sm-3 col-lg-2 offset-lg-2">
+                    <i class="fas fa-code" style="font-size: 36px"></i>
+                    <p class="pt-3">HTML & CSS</p>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <i class="fab fa-js" style="font-size: 36px"></i>
+                    <p class="pt-3">JavaScript</p>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <i class="fab fa-python" style="font-size: 36px"></i>
+                    <p class="pt-3">Python</p>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <i class="fas fa-database" style="font-size: 36px"></i>
+                    <p class="pt-3">PostgreSQL & MongoDB</p>
+                </div>
+                <div class="col-sm-10 offset-sm-1"></div>
+                <div class="col-sm-3 col-lg-2 offset-lg-2">
+                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
+                    <p class="pt-3">Skill</p>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
+                    <p class="pt-3">Skill</p>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
+                    <p class="pt-3">Skill</p>
+                </div>
+                <div class="col-sm-3 col-lg-2">
+                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
+                    <p class="pt-3">Skill</p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="row">
+                <div class="col-12">
+                    <h2 class="pt-4 pb-4">Projects</h2>
+
+                    <section class="card-deck mb-4">
+                        <div class="card border-light shadow rounded-0">
+                            <img
+                                src=""
+                                class="card-img-top rounded-0"
+                                alt="Project 1 preview image"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Blogue
+                                    <!-- <span>
+                                        · <i class="fas fa-desktop fa-lg"></i
+                                    ></span>
+                                    <span>
+                                        · <i class="fab fa-js-square fa-lg"></i
+                                    ></span>
+                                    <span>
+                                        · <i class="fab fa-html5 fa-lg"></i
+                                    ></span> -->
+                                </h5>
+                                <p class="card-text lead">
+                                    Built an interactive blog using a RESTful
+                                    API and the express.js library. Users can
+                                    anonymously post entries, comment and react
+                                    with emojis. An optional GIF can be added to
+                                    a post by the writer.
+                                </p>
+                                <a
+                                    class="float-right px-2"
+                                    href="https://github.com/roselynle/blogue-client"
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >View Repo</a
+                                >
+                                <a
+                                    class="float-right px-2"
+                                    href="https://blogue.netlify.app/"
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >Live Demo</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="card border-light shadow rounded-0">
+                            <img
+                                src=""
+                                class="card-img-top rounded-0"
+                                alt="Project 2 preview image"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Project 2
+                                </h5>
+                                <p class="card-text lead">
+                                    Add in a short description here.
+                                </p>
+                                <a
+                                    class="float-right px-2"
+                                    href="https://github.com/roselynle/"
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >View Repo</a
+                                >
+                                <a
+                                    class="float-right px-2"
+                                    href=""
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >Live Demo</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="card border-light shadow rounded-0">
+                            <img
+                                src=""
+                                class="card-img-top rounded-0"
+                                alt="Project 3 preview image"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Project 3
+                                </h5>
+                                <p class="card-text lead">
+                                    Add in a short description here.
+                                </p>
+                                <a
+                                    class="float-right px-2"
+                                    href="https://github.com/roselynle/"
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >View Repo</a
+                                >
+                                <a
+                                    class="float-right px-2"
+                                    href=""
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >Live Demo</a
+                                >
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="card-deck mb-4">
+                        <div class="card border-light shadow rounded-0">
+                            <img
+                                src=""
+                                class="card-img-top rounded-0"
+                                alt="Project 4 preview image"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Project 4
+                                </h5>
+                                <p class="card-text lead">
+                                    Add in a short description here.
+                                </p>
+                                <a
+                                    class="float-right px-2"
+                                    href="https://github.com/roselynle/"
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >View Repo</a
+                                >
+                                <a
+                                    class="float-right px-2"
+                                    href=""
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >Live Demo</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="card border-light shadow rounded-0">
+                            <img
+                                src=""
+                                class="card-img-top rounded-0"
+                                alt="Project 5 preview image"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Project 5
+                                </h5>
+                                <p class="card-text lead">
+                                    Add in a short description here.
+                                </p>
+                                <a
+                                    class="float-right px-2"
+                                    href="https://github.com/roselynle/"
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >View Repo</a
+                                >
+                                <a
+                                    class="float-right px-2"
+                                    href=""
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >Live Demo</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="card border-light shadow rounded-0">
+                            <img
+                                src=""
+                                class="card-img-top rounded-0"
+                                alt="Project 6 preview image"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Project 6
+                                </h5>
+                                <p class="card-text lead">
+                                    Add in a short description here.
+                                </p>
+                                <a
+                                    class="float-right px-2"
+                                    href="https://github.com/roselynle/"
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >View Repo</a
+                                >
+                                <a
+                                    class="float-right px-2"
+                                    href=""
+                                    target="_blank"
+                                    style="font-size: 0.75rem"
+                                    >Live Demo</a
+                                >
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section> 
+
+            <!-- Footer -->
+            <footer id="contact" class="row">
+                <div class="col-12">
+                    <h2 class="pt-4 pb-4">Contact</h2>
                     <p>
-                        I am based in London, UK and would describe myself as
-                        someone who always has a positive attitude and is up for
-                        a challenge.
+                        Feel free to get in touch with me via the following
+                        channels:
                     </p>
+                    <a
+                        id="github-link"
+                        href="https://github.com/roselynle"
+                        target="_blank"
+                        class="fab fa-github"
+                        style="font-size: 45px"
+                    ></a>
+                    <a
+                        id="linkedin-link"
+                        href="https://www.linkedin.com/in/roselynle/"
+                        target="_blank"
+                        class="fab fa-linkedin"
+                        style="font-size: 45px"
+                    ></a>
+                    <a
+                        id="email-link"
+                        href="mailto:roselynle95@gmail.com?Subject=Add Subject"
+                        class="fa fa-envelope-square"
+                        style="font-size: 45px"
+                    ></a>
                 </div>
-            </div>
-
-            <div class="col-sm-10 offset-sm-1">
-                <h2 class="pb-5">Skills</h2>
-            </div>
-            <div class="col-sm-3 col-lg-2 offset-lg-2">
-                <i class="fas fa-code" style="font-size: 36px"></i>
-                <p class="pt-3">HTML & CSS</p>
-            </div>
-            <div class="col-sm-3 col-lg-2">
-                <i class="fab fa-js" style="font-size: 36px"></i>
-                <p class="pt-3">JavaScript</p>
-            </div>
-            <div class="col-sm-3 col-lg-2">
-                <i class="fab fa-python" style="font-size: 36px"></i>
-                <p class="pt-3">Python</p>
-            </div>
-            <div class="col-sm-3 col-lg-2">
-                <i class="fas fa-database" style="font-size: 36px"></i>
-                <p class="pt-3">PostgreSQL & MongoDB</p>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="row text-center">
-            <div class="col-12">
-                <h2 class="pt-4 pb-4">Projects</h2>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="contact" class="row text-center">
-            <div class="col-12">
-                <h2 class="pt-4 pb-4">Contact</h2>
-                <p>
-                    Feel free to get in touch with me via the following
-                    channels:
-                </p>
-                <a
-                    id="github-link"
-                    href="https://github.com/roselynle"
-                    target="_blank"
-                    class="fab fa-github"
-                    style="font-size: 45px"
-                ></a>
-                <a
-                    id="linkedin-link"
-                    href="https://www.linkedin.com/in/roselynle/"
-                    target="_blank"
-                    class="fab fa-linkedin"
-                    style="font-size: 45px"
-                ></a>
-                <a
-                    id="email-link"
-                    href="mailto:roselynle95@gmail.com?Subject=Add Subject"
-                    class="fa fa-envelope-square"
-                    style="font-size: 45px"
-                ></a>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
