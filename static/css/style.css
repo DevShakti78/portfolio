@@ -208,3 +208,31 @@ footer.row {
     height: 1320px;
     border-bottom: solid 0.5px rgb(239, 237, 237);
 }
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card {
+    box-shadow: 0 2px 5px rgba(8, 33, 30, 0.5);
+    overflow: hidden;
+    height: 30rem;
+
+}
+
+.card:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0 2px 8px rgba(8, 33, 30, 0.5);
+    top: -4px;
+}
+
+.card:before {
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+}
+
+.card:hover:before {
+    transform: scale(2.15);
+}
+
