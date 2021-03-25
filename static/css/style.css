@@ -119,6 +119,10 @@ h3 {
     line-height: 1.5;
 }
 
+i {
+    color: rgb(255, 164, 128);
+}
+
 /* Profile Photo */
 .profile {
     margin-top: 1rem;
@@ -236,3 +240,16 @@ footer.row {
     transform: scale(2.15);
 }
 
+/* Contact section */
+a {
+    color: rgb(255, 164, 128);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    padding: 0rem 1rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: #9da7a6;
+    text-decoration: none;
+}
