@@ -4,6 +4,7 @@
 html {
     font-size: 110%;
     scroll-behavior: smooth;
+    scroll-padding-top: 60px /* so that navbar does not cover the sextions */
 }
 
 html,
@@ -93,6 +94,19 @@ h1 {
         bottom: 0;
         opacity: 1;
     }
+}
+
+/* Navbar */
+.bg-white {
+    box-shadow: 0 2px 8px rgba(8, 33, 30, 0.5);
+}
+
+#nav-logo,
+#nav-link-1,
+#nav-link-2,
+#nav-link-3,
+#nav-link-4 {
+    color: #394c4a;
 }
 
 /* About Me section */
