@@ -28,7 +28,7 @@ p {
     border: rgb(255, 175, 151) solid 1px;
     font-family: "Montserrat", sans-serif;
     font-size: 0.8rem;
-    padding: 10px 16px 9px;
+    padding: 0.7rem 1.9rem;
     border-radius: 5px;
 }
 
@@ -214,14 +214,13 @@ footer.row {
 }
 
 .card-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .card {
     box-shadow: 0 2px 5px rgba(8, 33, 30, 0.5);
     overflow: hidden;
     height: 30rem;
-
 }
 
 .card:hover {
