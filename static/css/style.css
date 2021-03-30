@@ -201,6 +201,26 @@ hr {
     margin: 30px 0 60px;
 }
 
+/* Skills section */
+#button-1, #button-2, #button-3, #button-4 {
+    text-decoration: none;
+    border: rgb(255, 175, 151) solid 1px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    color: rgb(255, 175, 151);
+    padding: 0.5rem 1.5rem;
+}
+
+#button-1:hover, #button-2:hover, #button-3:hover, #button-4:hover {
+    background-color: rgb(255, 164, 128);
+    color: #fffefd;
+}
+
+.skills-para {
+    font-size: 1rem;
+}
+
 /* Background */
 .background {
     background: linear-gradient(
