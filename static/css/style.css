@@ -4,7 +4,7 @@
 html {
     font-size: 110%;
     scroll-behavior: smooth;
-    scroll-padding-top: 60px; /* so that navbar does not cover the sextions */
+    scroll-padding-top: 60px; /* so that navbar does not cover the sections */
 }
 
 html,
@@ -103,7 +103,7 @@ h1 {
 
 /* Navbar */
 .bg-white {
-    box-shadow: 0 2px 8px rgba(8, 33, 30, 0.5);
+    box-shadow: 0 2px 8px rgba(149, 152, 151, 0.5);
 }
 
 #nav-logo,
