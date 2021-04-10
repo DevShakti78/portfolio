@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Roselyn Le</title>
         <!-- Bootstrap CSS -->
         <link
@@ -107,14 +107,19 @@
                 <div class="row">
                     <div class="col-12">
                         <h1 id="name">Roselyn</h1>
-                        <h1 id="pronounce">ros-a-lyn [noun]</h1>
+                        <h1 id="pronounce">
+                            [ros-a-lyn] <span id="noun">noun.</span>
+                        </h1>
                         <p id="definition">
                             A passionate, ambitious junior developer and<br />recent
                             graduate of the Futureproof coding bootcamp
                         </p>
                         <a id="main-btn" class="scroll" href="#about">
-                            VIEW MY WORK</a
-                        >
+                            SEE MORE<i
+                                class="fas fa-caret-down"
+                                style="padding-left: 8px"
+                            ></i
+                        ></a>
                     </div>
                 </div>
             </div>
@@ -162,40 +167,132 @@
 
                 <div class="col-sm-10 offset-sm-1">
                     <hr class="line" />
-                    <h2 class="pb-5">Skills</h2>
+                    <h2 class="pb-1">Skills</h2>
                 </div>
-                <div class="col-sm-3 col-lg-2 offset-lg-2">
-                    <i class="fas fa-code" style="font-size: 36px"></i>
-                    <p class="pt-3">HTML & CSS</p>
+                <div class="col-sm-3 col-lg-3">
+                    <i
+                        class="fas fa-code pt-5 pb-1"
+                        style="font-size: 55px"
+                    ></i>
+                    <p></p>
+                    <a
+                        id="button-1"
+                        class="btn btn-link mb-4"
+                        data-toggle="collapse"
+                        href="#languages"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                    >
+                        Languages<i
+                            class="fas fa-caret-down"
+                            style="padding-left: 8px"
+                        ></i
+                    ></a>
+
+                    <div
+                        id="languages"
+                        class="container-fluid text-center mt-5 collapse"
+                    >
+                        <p class="skills-para justify-text">
+                            const languages = <br />[ “HTML” , “CSS” ,<br />
+                            “JavaScript” , “Python” ,<br />
+                            “SQL” ]
+                        </p>
+                    </div>
                 </div>
-                <div class="col-sm-3 col-lg-2">
-                    <i class="fab fa-js" style="font-size: 36px"></i>
-                    <p class="pt-3">JavaScript</p>
+                <div class="col-sm-3 col-lg-3">
+                    <i
+                        class="fas fa-laptop pt-5 pb-1"
+                        style="font-size: 55px"
+                    ></i>
+                    <p></p>
+                    <a
+                        id="button-1"
+                        class="btn btn-link mb-4"
+                        data-toggle="collapse"
+                        href="#technologies"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                    >
+                        Technologies<i
+                            class="fas fa-caret-down"
+                            style="padding-left: 8px"
+                        ></i
+                    ></a>
+                    <div
+                        id="technologies"
+                        class="container-fluid text-center mt-5 collapse"
+                    >
+                        <p class="skills-para justify-text">
+                            const technologies = <br />[ “Node” , "Express" ,<br />
+                            “React” , "Docker" ,<br />
+                            "Bootstrap" , "Jest" ]
+                        </p>
+                    </div>
                 </div>
-                <div class="col-sm-3 col-lg-2">
-                    <i class="fab fa-python" style="font-size: 36px"></i>
-                    <p class="pt-3">Python</p>
+                <div class="col-sm-3 col-lg-3">
+                    <i
+                        class="fas fa-lightbulb pt-5 pb-1"
+                        style="font-size: 55px"
+                    ></i>
+                    <p></p>
+                    <a
+                        id="button-3"
+                        class="btn btn-link mb-4"
+                        data-toggle="collapse"
+                        href="#concepts"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                    >
+                        Concepts<i
+                            class="fas fa-caret-down"
+                            style="padding-left: 8px"
+                        ></i
+                    ></a>
+                    <div
+                        id="concepts"
+                        class="container-fluid text-center mt-5 collapse"
+                    >
+                        <p class="skills-para justify-text">
+                            const concepts = <br />[ "Version_Control" , <br />
+                            "TDD" ,<br />
+                            "REST" ]
+                        </p>
+                    </div>
                 </div>
-                <div class="col-sm-3 col-lg-2">
-                    <i class="fas fa-database" style="font-size: 36px"></i>
-                    <p class="pt-3">PostgreSQL & MongoDB</p>
-                </div>
-                <div class="col-sm-10 offset-sm-1"></div>
-                <div class="col-sm-3 col-lg-2 offset-lg-2">
-                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
-                    <p class="pt-3">Skill</p>
-                </div>
-                <div class="col-sm-3 col-lg-2">
-                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
-                    <p class="pt-3">Skill</p>
-                </div>
-                <div class="col-sm-3 col-lg-2">
-                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
-                    <p class="pt-3">Skill</p>
-                </div>
-                <div class="col-sm-3 col-lg-2">
-                    <!-- <i class="fas fa-code" style="font-size: 36px"></i> -->
-                    <p class="pt-3">Skill</p>
+                <div class="col-sm-3 col-lg-3">
+                    <i
+                        class="fas fa-user pt-5 pb-1"
+                        style="font-size: 55px"
+                    ></i>
+                    <p></p>
+                    <a
+                        id="button-1"
+                        class="btn btn-link mb-4"
+                        data-toggle="collapse"
+                        href="#softskills"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                    >
+                        Soft Skills<i
+                            class="fas fa-caret-down"
+                            style="padding-left: 8px"
+                        ></i
+                    ></a>
+                    <div
+                        id="softskills"
+                        class="container-fluid text-center mt-5 collapse"
+                    >
+                        <p class="skills-para justify-text">
+                            const soft_skills = <br />[ "Communication" ,<br />
+                            "Time_Management" , "Leadership" ,<br />
+                            "Teamwork" ]
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -203,213 +300,229 @@
             <section id="projects" class="row">
                 <div class="col-12">
                     <h2 class="pt-4 pb-4">Projects</h2>
-
-                    <section class="card-deck pt-4 mb-4">
-                        <div class="card border-0 shadow rounded-0">
-                            <img
-                                src="static/images/blogue-screenshot.png"
-                                class="card-img-top rounded-0"
-                                alt="Project 1 preview image"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Blogue
-                                    <!-- <span>
-                                        · <i class="fas fa-desktop fa-lg"></i
-                                    ></span>
-                                    <span>
-                                        · <i class="fab fa-js-square fa-lg"></i
-                                    ></span>
-                                    <span>
-                                        · <i class="fab fa-html5 fa-lg"></i
-                                    ></span> -->
-                                </h5>
-                                <p class="card-text lead">
-                                    A group project to build an community
-                                    journalling webpage using a RESTful API and
-                                    the express.js library. Users can
-                                    anonymously post entries, with an optional
-                                    accompanying GIF of their choosing. Other
-                                    users may view, comment and react on the
-                                    submitted posts.
-                                </p>
-                                <a
-                                    class="float-right pb-5 px-2"
-                                    href="https://github.com/roselynle/blogue-client"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >View Repo</a
-                                >
-                                <a
-                                    class="float-right px-2"
-                                    href="https://blogue.netlify.app/"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >Live Demo</a
-                                >
+                    <p class="pb-4">
+                        Scroll through to see some of my featured work below.
+                        Visit my GitHub to check out all of my projects!
+                    </p>
+                    <div
+                        id="myCarousel"
+                        class="carousel slide"
+                        data-ride="carousel"
+                    >
+                        <div class="carousel-inner row w-100 mx-auto">
+                            <div class="carousel-item col-md-4 active">
+                                <div class="card border-0 shadow rounded-0">
+                                    <img
+                                        src="static/images/blogue-screenshot.png"
+                                        class="card-img-top rounded-0"
+                                        alt="Project 1 preview image"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Blogue
+                                            <!-- <span>
+                                                · <i class="fas fa-desktop fa-lg"></i
+                                            ></span>
+                                            <span>
+                                                · <i class="fab fa-js-square fa-lg"></i
+                                            ></span>
+                                            <span>
+                                                · <i class="fab fa-html5 fa-lg"></i
+                                            ></span> -->
+                                        </h5>
+                                        <p class="card-text lead">
+                                            A group project to build an
+                                            community journalling webpage using
+                                            a RESTful API and the express.js
+                                            library. Users can anonymously post
+                                            entries, with an optional
+                                            accompanying GIF of their choosing.
+                                            Other users may view, comment and
+                                            react on the submitted posts.
+                                        </p>
+                                        <a
+                                            class="float-right pb-5 px-2"
+                                            href="https://github.com/roselynle/blogue-client"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >View Repo</a
+                                        >
+                                        <a
+                                            class="float-right px-2"
+                                            href="https://blogue.netlify.app/"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >Live Demo</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card border-0 shadow rounded-0">
+                                    <img
+                                        src="static/images/rps-screenshot.png"
+                                        class="card-img-top rounded-0"
+                                        alt="Project 2 preview image"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            Rock, Paper, Scissors
+                                        </h5>
+                                        <p class="card-text lead">
+                                            A simple implementation of the
+                                            classic rock, paper, scissors game.
+                                            The game is played against the
+                                            computer and the first to score five
+                                            points wins the session. This was a
+                                            solo project built using HTML,
+                                            CSS and vanilla JavaScript.
+                                            <br />
+                                        </p>
+                                        <a
+                                            class="float-right px-2"
+                                            href="https://github.com/roselynle/rock-paper-scissors"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >View Repo</a
+                                        >
+                                        <a
+                                            class="float-right px-2"
+                                            href="https://rock-paper-scissors-go.netlify.app/"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >Live Demo</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card border-0 shadow rounded-0">
+                                    <img
+                                        src=""
+                                        class="card-img-top rounded-0"
+                                        alt="Project 3 preview image"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Hobbit</h5>
+                                        <p class="card-text lead">
+                                            Habit tracker that allows users to
+                                            log and monitor their habits. Hobbit
+                                            was built as part of a group project
+                                            using technologies such as Node and
+                                            PostgreSQL. Hobbit also makes use of
+                                            JWTs for authentication and
+                                            authorisation as well as Docker for
+                                            containerisation.
+                                        </p>
+                                        <a
+                                            class="float-right px-2"
+                                            href="https://github.com/roselynle/hobbit"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >View Repo</a
+                                        >
+                                        <a
+                                            class="float-right px-2"
+                                            href="https://hobbit.netlify.app"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >Live Demo</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card border-0 shadow rounded-0">
+                                    <img
+                                        src=""
+                                        class="card-img-top rounded-0"
+                                        alt="Project 4 preview image"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 4</h5>
+                                        <p class="card-text lead">
+                                            Add in a short description here.
+                                        </p>
+                                        <a
+                                            class="float-right px-2"
+                                            href="https://github.com/roselynle/"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >View Repo</a
+                                        >
+                                        <a
+                                            class="float-right px-2"
+                                            href=""
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >Live Demo</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                                <div class="card border-0 shadow rounded-0">
+                                    <img
+                                        src=""
+                                        class="card-img-top rounded-0"
+                                        alt="Project 5 preview image"
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project 5</h5>
+                                        <p class="card-text lead">
+                                            Add in a short description here.
+                                        </p>
+                                        <a
+                                            class="float-right px-2"
+                                            href="https://github.com/roselynle/"
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >View Repo</a
+                                        >
+                                        <a
+                                            class="float-right px-2"
+                                            href=""
+                                            target="_blank"
+                                            style="font-size: 0.75rem"
+                                            >Live Demo</a
+                                        >
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="card border-0 shadow rounded-0">
-                            <img
-                                src="static/images/rps-screenshot.png"
-                                class="card-img-top rounded-0"
-                                alt="Project 2 preview image"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Rock, Paper, Scissors
-                                </h5>
-                                <p class="card-text lead">
-                                    A simple implementation of the classic rock,
-                                    paper, scissors game. The game is played
-                                    against the computer and the first to score
-                                    5 points wins the session. This was an
-                                    individual project built using HTML, CSS and
-                                    vanilla JavaScript.
-                                    <br />
-                                    <br />
-                                </p>
-                                <a
-                                    class="float-right px-2"
-                                    href="https://github.com/roselynle/rock-paper-scissors"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >View Repo</a
-                                >
-                                <a
-                                    class="float-right px-2"
-                                    href="https://rock-paper-scissors-go.netlify.app/"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >Live Demo</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="card border-0 shadow rounded-0">
-                            <img
-                                src=""
-                                class="card-img-top rounded-0"
-                                alt="Project 3 preview image"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Project 3</h5>
-                                <p class="card-text lead">
-                                    Add in a short description here.
-                                </p>
-                                <a
-                                    class="float-right px-2"
-                                    href="https://github.com/roselynle/"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >View Repo</a
-                                >
-                                <a
-                                    class="float-right px-2"
-                                    href=""
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >Live Demo</a
-                                >
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="card-deck mb-4">
-                        <div class="card border-0 shadow rounded-0">
-                            <img
-                                src=""
-                                class="card-img-top rounded-0"
-                                alt="Project 4 preview image"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Project 4</h5>
-                                <p class="card-text lead">
-                                    Add in a short description here.
-                                </p>
-                                <a
-                                    class="float-right px-2"
-                                    href="https://github.com/roselynle/"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >View Repo</a
-                                >
-                                <a
-                                    class="float-right px-2"
-                                    href=""
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >Live Demo</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="card border-0 shadow rounded-0">
-                            <img
-                                src=""
-                                class="card-img-top rounded-0"
-                                alt="Project 5 preview image"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Project 5</h5>
-                                <p class="card-text lead">
-                                    Add in a short description here.
-                                </p>
-                                <a
-                                    class="float-right px-2"
-                                    href="https://github.com/roselynle/"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >View Repo</a
-                                >
-                                <a
-                                    class="float-right px-2"
-                                    href=""
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >Live Demo</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="card border-0 shadow rounded-0">
-                            <img
-                                src=""
-                                class="card-img-top rounded-0"
-                                alt="Project 6 preview image"
-                            />
-                            <div class="card-body">
-                                <h5 class="card-title">Project 6</h5>
-                                <p class="card-text lead">
-                                    Add in a short description here.
-                                </p>
-                                <a
-                                    class="float-right px-2"
-                                    href="https://github.com/roselynle/"
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >View Repo</a
-                                >
-                                <a
-                                    class="float-right px-2"
-                                    href=""
-                                    target="_blank"
-                                    style="font-size: 0.75rem"
-                                    >Live Demo</a
-                                >
-                            </div>
-                        </div>
-                    </section>
+                        <a
+                            class="carousel-control-prev"
+                            href="#myCarousel"
+                            role="button"
+                            data-slide="prev"
+                        >
+                            <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a
+                            class="carousel-control-next"
+                            href="#myCarousel"
+                            role="button"
+                            data-slide="next"
+                        >
+                            <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                            ></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </section>
 
             <!-- Footer -->
-
             <footer id="contact" class="row">
                 <div class="col-12">
-                    <h2 class="pt-4 pb-5">Contact</h2>
-                    <p class="pb-5">
+                    <h2 class="pt-4 pb-4">Contact</h2>
+                    <p class="pb-4">
                         Feel free to get in touch with me via the following
                         channels:
                     </p>
