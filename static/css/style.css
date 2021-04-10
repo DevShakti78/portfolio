@@ -3,12 +3,6 @@
 /* Main styling */
 html {
     font-size: 110%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 60px; /* so that navbar does not cover the sections */
-}
-
-* {
-    -webkit-overflow-scrolling: touch;
 }
 
 html,
@@ -261,14 +255,14 @@ hr {
 #button-1:hover,
 #button-2:hover,
 #button-3:hover,
-#button-4:hover{
+#button-4:hover {
     background-color: rgb(255, 164, 128);
     color: #fffefd;
 }
 
-#button-1:hover .fa-caret-down ,
-#button-2:hover .fa-caret-down ,
-#button-3:hover .fa-caret-down ,
+#button-1:hover .fa-caret-down,
+#button-2:hover .fa-caret-down,
+#button-3:hover .fa-caret-down,
 #button-4:hover .fa-caret-down {
     color: #fffefd;
 }
@@ -292,10 +286,10 @@ hr {
     #img-caption {
         font-size: 0.75rem;
         width: 100%;
-/* need to fix img caption on mobile */
+        /* need to fix img caption on mobile */
     }
     #about-para {
-        width:92%;
+        width: 92%;
     }
     .skills-para {
         font-size: 0.9rem;
@@ -418,12 +412,12 @@ hr {
 
 /* iPad size to show two cards instead of three */
 @media (min-width: 760px) and (max-width: 780px) {
-        /* show 2 items */
-        .carousel-inner .active,
-        .carousel-inner .active + .carousel-item {
-            display: block;
-        }
-        .carousel-inner
+    /* show 2 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner
         .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
     .carousel-inner
         .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
@@ -515,6 +509,8 @@ hr {
     width: 30px;
 }
 
+
+/* Media queries for projects section */
 @media (max-width: 1050px) {
     #projects {
         height: 850px;
@@ -634,9 +630,10 @@ a:hover {
 @media (max-width: 1024px) {
     .background {
         background: linear-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.8)
-        ),
-        url("../images/background.jpg") center;
-    background-size: cover;
+                rgba(255, 255, 255, 0.8),
+                rgba(255, 255, 255, 0.8)
+            ),
+            url("../images/background.jpg") center;
+        background-size: cover;
+    }
 }
