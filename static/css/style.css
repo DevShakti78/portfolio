@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
 
 /* Main styling */
 html {
@@ -41,7 +41,7 @@ p {
 
 /* Intro section */
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
 #name {
@@ -135,7 +135,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 2.8rem;
     padding-bottom: 1rem;
 }
@@ -163,7 +163,7 @@ i {
 }
 
 #img-caption {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 0.75rem;
     font-weight: 800;
     color: #394c4a;
@@ -202,7 +202,10 @@ hr {
 }
 
 /* Skills section */
-#button-1, #button-2, #button-3, #button-4 {
+#button-1,
+#button-2,
+#button-3,
+#button-4 {
     text-decoration: none;
     border: rgb(255, 175, 151) solid 1px;
     font-family: "Montserrat", sans-serif;
@@ -212,7 +215,10 @@ hr {
     padding: 0.5rem 1.5rem;
 }
 
-#button-1:hover, #button-2:hover, #button-3:hover, #button-4:hover {
+#button-1:hover,
+#button-2:hover,
+#button-3:hover,
+#button-4:hover {
     background-color: rgb(255, 164, 128);
     color: #fffefd;
 }
@@ -287,6 +293,115 @@ footer.row {
     transform: scale(2.15);
 }
 
+/* Projects section - carousel */
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+
+    .carousel-inner
+        .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner
+        .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+        + .carousel-item,
+    .carousel-inner
+        .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+        + .carousel-item
+        + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner
+        .active.carousel-item
+        + .carousel-item
+        + .carousel-item
+        + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left
+        + .carousel-item
+        + .carousel-item
+        + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right
+        + .carousel-item
+        + .carousel-item
+        + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+.carousel-inner {
+    height: 550px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23455' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    margin-top: 1.5rem;
+    margin-left: -13rem;
+    height: 16%;
+    top: 33%;
+    width: 30px;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23455' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    margin-top: 1.5rem;
+    margin-right: -13rem;
+    height: 16%;
+    top: 33%;
+    width: 30px;
+}
+
+@media (max-width: 500px) {
+    .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23455' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        margin-top: 1.5rem;
+        margin-right: -4rem;
+    }
+}
+
 /* Contact section */
 #contact {
     background: linear-gradient(
@@ -309,3 +424,4 @@ a:hover {
     color: #9da7a6;
     text-decoration: none;
 }
+
