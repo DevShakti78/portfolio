@@ -7,6 +7,10 @@ html {
     scroll-padding-top: 60px; /* so that navbar does not cover the sections */
 }
 
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 html,
 body {
     height: 100%; /* Fullscreen BG */
@@ -39,6 +43,12 @@ p {
     color: #fffefd;
 }
 
+/*  Containers */
+section.row,
+footer.row {
+    padding: 30px 30px 60px;
+}
+
 /* Intro section */
 h1 {
     font-family: "Playfair Display", serif;
@@ -67,6 +77,9 @@ h1 {
 #definition {
     padding-bottom: 1rem;
     font-size: 1.2rem;
+    width: 35rem;
+    margin: 0 auto;
+    padding-bottom: 2rem;
 }
 
 /* Animate Bottom */
@@ -121,6 +134,33 @@ h1 {
 
 #navbarCollapse {
     color: #394c4a;
+}
+
+/* Media queries for general styling and intro section */
+@media (max-width: 540px) {
+    body {
+        font-size: 0.9rem;
+    }
+    #name {
+        font-size: 3.8rem;
+    }
+    #pronounce {
+        font-size: 1.5rem;
+    }
+    #definition {
+        font-size: 0.9rem;
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 1.8rem;
+    }
+    #main-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem 1.6rem;
+        border-radius: 5px;
+    }
+    #navbarCollapse {
+        font-size: 0.75rem;
+    }
 }
 
 /* About Me section */
@@ -227,35 +267,29 @@ hr {
     font-size: 1rem;
 }
 
-/* Background */
-.background {
-    background: linear-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.8)
-        ),
-        url("../images/background.jpg") center center fixed;
-    background-size: cover;
-    height: 100%;
-    margin: 0;
-    min-height: 510px;
-    position: relative;
-    width: 100%;
-}
-.background .container {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.background .row {
-    padding-bottom: 45px;
-}
-
-/*  Containers */
-section.row,
-footer.row {
-    padding: 30px 30px 60px;
+/* Media queries for about me section */
+@media (max-width: 540px) {
+    h2 {
+        font-size: 2.4rem;
+    }
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .profile {
+        margin-top: 0.5rem;
+    }
+    #img-caption {
+        font-size: 0.75rem;
+        width: 100%;
+/* need to fix img caption on mobile */
+    }
+    #about-para {
+        width:92%;
+    }
+    .skills-para {
+        font-size: 0.9rem;
+    }
 }
 
 /* Projects section*/
@@ -294,7 +328,7 @@ footer.row {
 }
 
 /* Projects section - carousel */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     /* show 3 items */
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
@@ -303,6 +337,83 @@ footer.row {
     }
 
     .carousel-inner
+        .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner
+        .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+        + .carousel-item,
+    .carousel-inner
+        .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+        + .carousel-item
+        + .carousel-item {
+        transition: none;
+    }
+
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-inner
+        .active.carousel-item
+        + .carousel-item
+        + .carousel-item
+        + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left
+        + .carousel-item
+        + .carousel-item
+        + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right
+        + .carousel-item
+        + .carousel-item
+        + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+/* iPad size to show two cards instead of three */
+@media (min-width: 760px) and (max-width: 780px) {
+        /* show 2 items */
+        .carousel-inner .active,
+        .carousel-inner .active + .carousel-item {
+            display: block;
+        }
+        .carousel-inner
         .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
     .carousel-inner
         .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
@@ -485,3 +596,37 @@ a:hover {
     text-decoration: none;
 }
 
+/* Background for intro section - messes up format unless I put at the bottom*/
+.background {
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)
+        ),
+        url("../images/background.jpg") center center fixed;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    min-height: 510px;
+    position: relative;
+    width: 100%;
+}
+.background .container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.background .row {
+    padding-bottom: 45px;
+}
+
+@media (max-width: 1024px) {
+    .background {
+        background: linear-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)
+        ),
+        url("../images/background.jpg") center;
+    background-size: cover;
+}

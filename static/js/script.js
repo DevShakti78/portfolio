@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /* Add navbar background color when scrolled */
+    // Add navbar background color when scrolled 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 56) {
             $(".navbar").addClass("bg-white");
@@ -41,4 +41,21 @@ $(document).ready(function () {
             }
         }
     });
+});
+
+// centers about para text for mobile screen
+$(window).on('resize', function(){
+    var win = $(this);
+    if (win.width()< 540) { $('div').removeClass('text-left'); }
+});
+
+// makes iPad (only) size show two cards instead of three
+$(window).on('resize', function(){
+    var win = $(this);
+    if (win.width()< 769) { $('.carousel-item').removeClass('col-md-4').addClass('col-md-6'); }
+});
+
+$(window).on('resize', function(){
+    var win = $(this);
+    if (win.width()> 770) { $('.carousel-item').removeClass('col-md-6').addClass('col-md-4'); }
 });
