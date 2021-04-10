@@ -263,7 +263,7 @@ footer.row {
     background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm28-acrylicpaint-poy-291_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=3bff0249433d3ccd680b848ddb2765dc");
     background-size: 100vw;
     color: #394c4a;
-    height: 1320px;
+    height: 845px;
     border-bottom: solid 0.5px rgb(243, 242, 242);
 }
 
@@ -394,11 +394,71 @@ footer.row {
     width: 30px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1050px) {
+    #projects {
+        height: 850px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+        margin-bottom: 0.2rem;
+    }
+    .carousel-control-prev-icon {
+        margin-left: -9.5rem;
+        width: 25px;
+    }
     .carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23455' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-        margin-top: 1.5rem;
-        margin-right: -4rem;
+        margin-right: -9.5rem;
+        width: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #projects {
+        height: 850px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.7rem;
+        margin-bottom: 0.2rem;
+    }
+    .carousel-control-prev-icon {
+        margin-left: -7.5rem;
+        width: 25px;
+    }
+    .carousel-control-next-icon {
+        margin-right: -7.5rem;
+        width: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    #projects {
+        height: 815px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-text {
+        font-size: 0.75rem;
+        margin-bottom: 0.2rem;
+    }
+    .card {
+        height: 26rem;
+    }
+    .carousel-control-prev-icon {
+        margin-left: -4.5rem;
+        margin-bottom: 5.5rem;
+        width: 21px;
+    }
+    .carousel-control-next-icon {
+        margin-right: -4.5rem;
+        margin-bottom: 5.5rem;
+        width: 21px;
     }
 }
 
