@@ -43,6 +43,10 @@ p {
     color: #fffefd;
 }
 
+#main-btn:hover .fa-caret-down {
+    color: #fffefd;
+}
+
 /*  Containers */
 section.row,
 footer.row {
@@ -129,7 +133,6 @@ h1 {
 
 .nav-link:hover {
     font-weight: 700;
-    text-decoration: underline;
 }
 
 #navbarCollapse {
@@ -258,10 +261,18 @@ hr {
 #button-1:hover,
 #button-2:hover,
 #button-3:hover,
-#button-4:hover {
+#button-4:hover{
     background-color: rgb(255, 164, 128);
     color: #fffefd;
 }
+
+#button-1:hover .fa-caret-down ,
+#button-2:hover .fa-caret-down ,
+#button-3:hover .fa-caret-down ,
+#button-4:hover .fa-caret-down {
+    color: #fffefd;
+}
+
 
 .skills-para {
     font-size: 1rem;
@@ -576,8 +587,8 @@ hr {
 /* Contact section */
 #contact {
     background: linear-gradient(
-            rgba(255, 255, 255, 0.75),
-            rgba(255, 255, 255, 0.75)
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.8)
         ),
         url(../images/footerbackground.png);
     background-size: cover;
