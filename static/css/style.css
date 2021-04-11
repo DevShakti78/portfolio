@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    color: #394c4a;
+    color: #423e3a;
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 300;
@@ -122,7 +122,7 @@ h1 {
 #nav-link-2,
 #nav-link-3,
 #nav-link-4 {
-    color: #394c4a;
+    color: #423e3a;
 }
 
 .nav-link:hover {
@@ -130,7 +130,12 @@ h1 {
 }
 
 #navbarCollapse {
-    color: #394c4a;
+    color: #423e3a;
+}
+
+#logo {
+    margin-left: -12px;
+    margin-top: -3px;
 }
 
 /* Media queries for general styling and intro section */
@@ -157,6 +162,11 @@ h1 {
     }
     #navbarCollapse {
         font-size: 0.75rem;
+    }
+    #logo {
+        width: 50px;
+        margin-left: -20px;
+        margin-top: -3px;
     }
 }
 
@@ -203,7 +213,7 @@ i {
     font-family: "Playfair Display", serif;
     font-size: 0.75rem;
     font-weight: 800;
-    color: #394c4a;
+    color: #423e3a;
     padding-top: 10px;
 }
 
@@ -300,7 +310,7 @@ hr {
 #projects {
     background: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm28-acrylicpaint-poy-291_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=3bff0249433d3ccd680b848ddb2765dc");
     background-size: 100vw;
-    color: #394c4a;
+    color: #423e3a;
     height: 845px;
     border-bottom: solid 0.5px rgb(243, 242, 242);
 }
