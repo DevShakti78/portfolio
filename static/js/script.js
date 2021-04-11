@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Add navbar background color when scrolled 
+    // add navbar background color when scrolled
     $(window).scroll(function () {
         if ($(window).scrollTop() > 56) {
             $(".navbar").addClass("bg-white");
@@ -7,7 +7,7 @@ $(document).ready(function () {
             $(".navbar").removeClass("bg-white");
         }
     });
-    // If mobile, add background color when toggler is clicked
+    // if mobile, add background color when toggler is clicked
     $(".navbar-toggler").click(function () {
         if (!$(".navbar-collapse").hasClass("show")) {
             $(".navbar").addClass("bg-white");
@@ -20,16 +20,17 @@ $(document).ready(function () {
     });
 });
 
+// projects carousel
 $(document).ready(function () {
     $("#myCarousel").on("slide.bs.carousel", function (e) {
-        var $e = $(e.relatedTarget);
-        var idx = $e.index();
-        var itemsPerSlide = 3;
-        var totalItems = $(".carousel-item").length;
+        let $e = $(e.relatedTarget);
+        let idx = $e.index();
+        let itemsPerSlide = 3;
+        let totalItems = $(".carousel-item").length;
 
         if (idx >= totalItems - (itemsPerSlide - 1)) {
-            var it = itemsPerSlide - (totalItems - idx);
-            for (var i = 0; i < it; i++) {
+            let it = itemsPerSlide - (totalItems - idx);
+            for (let i = 0; i < it; i++) {
                 // append slides to end
                 if (e.direction == "left") {
                     $(".carousel-item").eq(i).appendTo(".carousel-inner");
@@ -43,46 +44,44 @@ $(document).ready(function () {
     });
 });
 
-// centers about para text for mobile screen
-$(window).on('resize', function(){
-    var win = $(this);
-    if (win.width()< 540) { $('div').removeClass('text-left'); }
+// centers the about me paragraph text for mobile screens
+$(window).on("resize", function () {
+    let win = $(this);
+    if (win.width() < 540) {
+        $("div").removeClass("text-left");
+    }
 });
 
-// makes iPad (only) size show two cards instead of three
-$(window).on('resize', function(){
-    var win = $(this);
-    if (win.width()< 769) { $('.carousel-item').removeClass('col-md-4').addClass('col-md-6'); }
+// makes iPad (only) show two project cards instead of three - looks better this way on ipads
+$(window).on("resize", function () {
+    let win = $(this);
+    if (win.width() < 769) {
+        $(".carousel-item").removeClass("col-md-4").addClass("col-md-6");
+    }
 });
 
-$(window).on('resize', function(){
-    var win = $(this);
-    if (win.width()> 770) { $('.carousel-item').removeClass('col-md-6').addClass('col-md-4'); }
+$(window).on("resize", function () {
+    let win = $(this);
+    if (win.width() > 770) {
+        $(".carousel-item").removeClass("col-md-6").addClass("col-md-4");
+    }
 });
 
-// $( function() {
-//     $( 'a[href^="#"]' ).on( 'click', function( e ) {
+// function for smooth scroll
+let $scrollButton = $(".scroll");
 
-//         if ( this.hash !== '' ) {
-//             e.preventDefault();
-
-//             var hash = this.hash;
-//             var nav = $( '.navbar' ).outerHeight();
-
-//             $( 'html, body' ).animate( {
-//                 scrollTop: $( hash ).offset().top - nav
-//             }, 1000, function() {
-//                 window.location.hash = hash;
-//             } );
-//         }
-//     } );
-// } );
-var $scrollButton = $('.scroll');
-
-$scrollButton.on('click', function (e) {
+$scrollButton.on("click", function (e) {
     e.preventDefault();
-    var $link = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $($link).offset().top - 60
-    }, 1000);
+    let $link = $(this).attr("href");
+    $("html, body").animate(
+        {
+            scrollTop: $($link).offset().top - 60,
+        },
+        1000
+    );
+});
+
+// closes hamburger bar when link is clicked
+$(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
 });
