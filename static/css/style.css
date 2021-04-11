@@ -117,6 +117,10 @@ h1 {
     box-shadow: 0 2px 8px rgba(149, 152, 151, 0.5);
 }
 
+.navbar {
+    padding: 5px 16px;
+}
+
 #nav-logo,
 #nav-link-1,
 #nav-link-2,
