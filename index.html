@@ -22,10 +22,13 @@
         <link href="static/css/style.css" rel="stylesheet" type="text/css" />
         <!-- JavaScript -->
         <script
-            defer
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"
+        ></script>
+        <script
+            defer
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         ></script>
         <script
             defer
@@ -61,9 +64,15 @@
         <link rel="manifest" href="/static/images/favicon/site.webmanifest" />
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#main-nav" data-offset="60">
         <nav class="navbar navbar-expand-md fixed-top navbar-light">
-            <a class="navbar-brand" id="nav-logo" href="#home">RL</a>
+            <a class="navbar-brand scroll" id="nav-logo" href="#home"
+                ><img
+                    src="static/images/logo.png"
+                    id="logo"
+                    width="58px"
+                    alt="namelogo"
+            /></a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -78,22 +87,28 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" id="nav-link-1" href="#"
+                        <a class="nav-link scroll" id="nav-link-1" href="#home"
                             >Home <span class="sr-only">(current)</span></a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link-2" href="#about"
+                        <a class="nav-link scroll" id="nav-link-2" href="#about"
                             >About Me</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link-3" href="#projects"
+                        <a
+                            class="nav-link scroll"
+                            id="nav-link-3"
+                            href="#projects"
                             >Projects</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="nav-link-4" href="#contact"
+                        <a
+                            class="nav-link scroll"
+                            id="nav-link-4"
+                            href="#contact"
                             >Contact</a
                         >
                     </li>
@@ -111,8 +126,8 @@
                             [ros-a-lyn] <span id="noun">noun.</span>
                         </h1>
                         <p id="definition">
-                            A passionate, ambitious junior developer and<br />recent
-                            graduate of the Futureproof coding bootcamp
+                            A passionate, ambitious junior full stack developer
+                            currently training at Futureproof coding bootcamp
                         </p>
                         <a id="main-btn" class="scroll" href="#about">
                             SEE MORE<i
@@ -149,8 +164,8 @@
                         class="col-sm-8 offset-sm-2 col-md-7 offset-md-0 col-lg-6 pl-5 text-left"
                     >
                         <h3 class="pt-2">
-                            Hi I'm Roselyn, and I recently graduated as a
-                            trainee Full Stack Developer with Futureproof.
+                            Hi I'm Roselyn, and I am currently training as as a
+                            Full Stack Developer with Futureproof.
                         </h3>
                         <p>
                             I am based in London, UK and would describe myself
@@ -208,7 +223,7 @@
                     ></i>
                     <p></p>
                     <a
-                        id="button-1"
+                        id="button-2"
                         class="btn btn-link mb-4"
                         data-toggle="collapse"
                         href="#technologies"
@@ -257,7 +272,7 @@
                         class="container-fluid text-center mt-5 collapse"
                     >
                         <p class="skills-para justify-text">
-                            const concepts = <br />[ "Version_Control" , <br />
+                            const concepts = <br />[ "Version Control" , <br />
                             "TDD" ,<br />
                             "REST" ]
                         </p>
@@ -270,7 +285,7 @@
                     ></i>
                     <p></p>
                     <a
-                        id="button-1"
+                        id="button-4"
                         class="btn btn-link mb-4"
                         data-toggle="collapse"
                         href="#softskills"
@@ -289,7 +304,7 @@
                     >
                         <p class="skills-para justify-text">
                             const soft_skills = <br />[ "Communication" ,<br />
-                            "Time_Management" , "Leadership" ,<br />
+                            "Time Management" , "Leadership" ,<br />
                             "Teamwork" ]
                         </p>
                     </div>
@@ -336,7 +351,7 @@
                                             a RESTful API and the express.js
                                             library. Users can anonymously post
                                             entries, with an optional
-                                            accompanying GIF of their choosing.
+                                            accompanying GIF of their choice.
                                             Other users may view, comment and
                                             react on the submitted posts.
                                         </p>
@@ -373,8 +388,9 @@
                                             classic rock, paper, scissors game.
                                             The game is played against the
                                             computer and the first to score five
-                                            points wins the session. This was a
-                                            solo project built using HTML,
+                                            points wins the session. Sessions
+                                            can be restarted at any time. This
+                                            was a solo project built using HTML,
                                             CSS and vanilla JavaScript.
                                             <br />
                                         </p>
@@ -398,7 +414,7 @@
                             <div class="carousel-item col-md-4">
                                 <div class="card border-0 shadow rounded-0">
                                     <img
-                                        src=""
+                                        src="static/images/hobbit-screenshot.png"
                                         class="card-img-top rounded-0"
                                         alt="Project 3 preview image"
                                     />
@@ -409,10 +425,9 @@
                                             log and monitor their habits. Hobbit
                                             was built as part of a group project
                                             using technologies such as Node and
-                                            PostgreSQL. Hobbit also makes use of
-                                            JWTs for authentication and
-                                            authorisation as well as Docker for
-                                            containerisation.
+                                            PostgreSQL. JWTs were used for
+                                            authentication and authorisation as
+                                            well as Docker for containerisation.
                                         </p>
                                         <a
                                             class="float-right px-2"
@@ -434,14 +449,16 @@
                             <div class="carousel-item col-md-4">
                                 <div class="card border-0 shadow rounded-0">
                                     <img
-                                        src=""
+                                        src="static/images/comingsoon-screenshot.jpg"
                                         class="card-img-top rounded-0"
                                         alt="Project 4 preview image"
                                     />
                                     <div class="card-body">
                                         <h5 class="card-title">Project 4</h5>
                                         <p class="card-text lead">
-                                            Add in a short description here.
+                                            This project is coming soon, stayed
+                                            tuned! Expected to be updated
+                                            on/around 1st May
                                         </p>
                                         <a
                                             class="float-right px-2"
@@ -463,14 +480,16 @@
                             <div class="carousel-item col-md-4">
                                 <div class="card border-0 shadow rounded-0">
                                     <img
-                                        src=""
+                                        src="static/images/comingsoon-screenshot.jpg"
                                         class="card-img-top rounded-0"
                                         alt="Project 5 preview image"
                                     />
                                     <div class="card-body">
                                         <h5 class="card-title">Project 5</h5>
                                         <p class="card-text lead">
-                                            Add in a short description here.
+                                            This project is coming soon, stay
+                                            tuned! Expected to be updated
+                                            on/around 22nd May
                                         </p>
                                         <a
                                             class="float-right px-2"
