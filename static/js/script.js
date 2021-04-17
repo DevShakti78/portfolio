@@ -85,3 +85,19 @@ $scrollButton.on("click", function (e) {
 $(".nav-link").on("click", function () {
     $(".navbar-collapse").collapse("hide");
 });
+
+//change margin of about paragraph on mobile phones
+$(window).on("resize", function () {
+    let win = $(this);
+    if (win.width() < 540) {
+        $("#about-para").removeClass("pl-5").addClass("pl-4");
+    }
+});
+
+//change margin of profile photo for iPad pro only
+$(window).on("resize", function () {
+    let win = $(this);
+    if (win.width() < 1025 && win.width() > 1023) {
+        $(".profile").removeClass("pr-1").addClass("pr-5");
+    }
+});
