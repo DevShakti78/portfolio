@@ -80,7 +80,7 @@ h1 {
     padding-bottom: 2rem;
 }
 
-/* Animate Bottom */
+/* Animate Bottom (for intro section)*/
 #name,
 #pronounce,
 #definition,
@@ -139,7 +139,7 @@ h1 {
 
 #logo {
     margin-left: -12px;
-    margin-top: -3px;
+    margin-top: -4px;
 }
 
 /* Media queries for general styling and intro section */
@@ -149,6 +149,7 @@ h1 {
     }
     #name {
         font-size: 3.8rem;
+        padding-top: 2rem;
     }
     #pronounce {
         font-size: 1.5rem;
@@ -168,9 +169,30 @@ h1 {
         font-size: 0.75rem;
     }
     #logo {
-        width: 50px;
+        width: 48px;
         margin-left: -20px;
         margin-top: -3px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        font-size: 0.8rem;
+    }
+    #name {
+        font-size: 3.3rem;
+    }
+    #pronounce {
+        font-size: 1.2rem;
+    }
+    #definition {
+        font-size: 0.8rem;
+    }
+    #main-btn {
+        font-size: 0.7rem;
+    }
+    #logo {
+        width: 45px;
     }
 }
 
@@ -310,12 +332,31 @@ hr {
     }
 }
 
+@media (max-width: 375px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3 {
+        font-size: 0.9rem;
+    }
+    .skills-para {
+        font-size: 0.8rem;
+    }
+    #button-1,
+    #button-2,
+    #button-3,
+    #button-4 {
+        font-size: 0.75rem;
+    }
+}
+
 /* Projects section*/
 #projects {
     background: linear-gradient(
-        rgba(251, 210, 193, 0.1),
-        rgba(251, 210, 193, 0.1)
-    ), url("../images/projects-background.jpg");
+            rgba(251, 210, 193, 0.1),
+            rgba(251, 210, 193, 0.1)
+        ),
+        url("../images/projects-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #423e3a;
@@ -325,6 +366,10 @@ hr {
 
 .card-text {
     font-size: 0.85rem;
+}
+
+.card-link {
+    font-size: 0.75rem;
 }
 
 .card {
@@ -557,7 +602,7 @@ hr {
         font-size: 1rem;
     }
     .card-text {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         margin-bottom: 0.2rem;
     }
     .carousel-control-prev-icon {
@@ -574,13 +619,6 @@ hr {
     #projects {
         height: 815px;
     }
-    .card-title {
-        font-size: 1rem;
-    }
-    .card-text {
-        font-size: 0.75rem;
-        margin-bottom: 0.2rem;
-    }
     .card {
         height: 26rem;
     }
@@ -596,11 +634,26 @@ hr {
     }
 }
 
+@media (max-width: 375px) {
+    #projects {
+        height: 790px;
+    }
+    .card-link {
+        font-size: 0.6rem;
+    }
+    .card-title {
+        font-size: 0.9rem;
+    }
+    .card-text {
+        font-size: 0.65rem;
+    }
+}
+
 /* Contact section */
 #contact {
     background: linear-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0.8)
+            rgba(255, 255, 255, 0.76),
+            rgba(255, 255, 255, 0.76)
         ),
         url(../images/footerbackground.png);
     background-size: cover;
@@ -617,6 +670,18 @@ a {
 a:hover {
     color: #9da7a6;
     text-decoration: none;
+}
+
+@media (max-width: 540px) {
+    #contact {
+        background-size: 250%;
+    }
+}
+
+@media (max-width: 375px) {
+    a {
+        padding: 0rem 0.8rem;
+    }
 }
 
 /* Background for intro section - messes up format unless I put at the bottom*/
