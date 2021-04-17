@@ -54,6 +54,7 @@ h1 {
 
 #name {
     font-size: 5rem;
+    padding-top: 1.5rem;
     color: rgb(255, 164, 128);
     font-weight: 500;
     padding-bottom: 0.8rem;
@@ -226,9 +227,9 @@ i {
 
 /* Profile Photo */
 .profile {
-    margin-top: 1rem;
-    max-width: 200px;
-    padding: 0 10px 0 0px;
+    margin-top: 2rem;
+    max-width: 210px;
+    padding: 0px 10px 0px 0px;
 }
 
 #about-para {
@@ -308,6 +309,17 @@ hr {
 }
 
 /* Media queries for about me section */
+@media (max-width: 1050px) {
+    .profile {
+        max-width: 180px;
+        margin-top: 0rem;
+    }
+    #img-caption {
+        font-size: 0.7rem;
+        width: 115%;
+    }
+}
+
 @media (max-width: 540px) {
     h2 {
         font-size: 2.4rem;
@@ -317,6 +329,8 @@ hr {
         text-align: center;
     }
     .profile {
+        padding-left: 10px;
+        max-width: 230px;
         margin-top: 0.5rem;
     }
     #img-caption {
@@ -575,7 +589,7 @@ hr {
 /* Media queries for projects section */
 @media (max-width: 1050px) {
     #projects {
-        height: 850px;
+        height: 860px;
     }
     .card-title {
         font-size: 1rem;
@@ -595,23 +609,14 @@ hr {
 }
 
 @media (max-width: 768px) {
-    #projects {
-        height: 850px;
-    }
-    .card-title {
-        font-size: 1rem;
-    }
     .card-text {
         font-size: 0.75rem;
-        margin-bottom: 0.2rem;
     }
     .carousel-control-prev-icon {
         margin-left: -7.5rem;
-        width: 25px;
     }
     .carousel-control-next-icon {
         margin-right: -7.5rem;
-        width: 25px;
     }
 }
 
