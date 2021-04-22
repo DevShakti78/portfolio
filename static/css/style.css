@@ -27,7 +27,7 @@ p {
     border: rgb(255, 175, 151) solid 1px;
     font-family: "Montserrat", sans-serif;
     font-size: 0.85rem;
-    padding: 0.7rem 1.9rem;
+    padding: 0.6rem 1.8rem;
     border-radius: 5px;
 }
 
@@ -54,7 +54,7 @@ h1 {
 
 #name {
     font-size: 5rem;
-    padding-top: 3rem;
+    margin-top: 3rem;
     color: rgb(255, 164, 128);
     font-weight: 500;
     padding-bottom: 0.8rem;
