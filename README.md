@@ -1,13 +1,13 @@
 # Roselyn Le's Portfolio
-Netlify badge here
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2c24d808-1cc8-4a2b-964e-b0043d978adc/deploy-status)](https://app.netlify.com/sites/roselyn-le/deploys)
 
-(Add image)
+![](demo.png)
 
 This webpage serves as an online portfolio and displays my web presence, background, skills, projects and contact information. 
 
 ### How to access
 
-Deployed site can be found here:
+Access deployed site here: http://roselyn-le.netlify.app/
 
 ## Technologies used
 
