@@ -86,7 +86,7 @@ $(".nav-link").on("click", function () {
     $(".navbar-collapse").collapse("hide");
 });
 
-//change margin of about paragraph on mobile phones
+// change margin of about paragraph on mobile phones
 $(window).on("resize", function () {
     let win = $(this);
     if (win.width() < 540) {
@@ -94,10 +94,13 @@ $(window).on("resize", function () {
     }
 });
 
-//change margin of profile photo for iPad pro only
+// change margin of profile photo for iPad pro only
 $(window).on("resize", function () {
     let win = $(this);
     if (win.width() < 1025 && win.width() > 1023) {
         $(".profile").removeClass("pr-1").addClass("pr-5");
     }
 });
+
+// animate on scroll library
+AOS.init();
