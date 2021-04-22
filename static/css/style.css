@@ -54,7 +54,7 @@ h1 {
 
 #name {
     font-size: 5rem;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     color: rgb(255, 164, 128);
     font-weight: 500;
     padding-bottom: 0.8rem;
@@ -79,38 +79,6 @@ h1 {
     width: 35rem;
     margin: 0 auto;
     padding-bottom: 2rem;
-}
-
-/* Animate Bottom (for intro section)*/
-#name,
-#pronounce,
-#definition,
-#main-btn {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 2s;
-    animation-name: animatebottom;
-    animation-duration: 2s;
-}
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -50px;
-        opacity: 0;
-    }
-    to {
-        bottom: 0px;
-        opacity: 1;
-    }
-}
-@keyframes animatebottom {
-    from {
-        bottom: -50px;
-        opacity: 0;
-    }
-    to {
-        bottom: 0;
-        opacity: 1;
-    }
 }
 
 /* Navbar */
@@ -268,6 +236,10 @@ i {
     100% {
         content: "problem_solver == true";
     }
+}
+
+#spin {
+    display: inline-block;
 }
 
 hr {
