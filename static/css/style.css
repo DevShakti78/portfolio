@@ -106,6 +106,14 @@ h1 {
     color: #423e3a;
 }
 
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover {
+    color: rgb(255, 164, 128) !important;
+    font-weight: bold;
+}
+
 #logo {
     margin-left: -14px;
     margin-top: -2px;
@@ -212,14 +220,35 @@ i {
     padding-top: 10px;
 }
 
-#spin:after {
-    content: "";
-    animation: spin 8s infinite;
-    visibility: visible;
-}
-
 .empty {
     display: none;
+}
+
+#spin:after {
+    content: "problem_solver == true";
+    animation: spin 8s infinite;
+    -webkit-animation: spin 8s infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        content: "problem_solver == true";
+    }
+    20% {
+        content: "motivated == true";
+    }
+    40% {
+        content: "passionate == true";
+    }
+    60% {
+        content: "creative == true";
+    }
+    80% {
+        content: "hard_worker == true";
+    }
+    100% {
+        content: "problem_solver == true";
+    }
 }
 
 @keyframes spin {
@@ -307,7 +336,7 @@ hr {
         margin-top: 0.5rem;
     }
     .img-caption {
-        font-size: 0.75rem;
+        font-size: 0.55rem;
         width: 100%;
         /* need to fix img caption on mobile */
     }
@@ -562,7 +591,7 @@ hr {
 /* Media queries for projects section */
 @media (max-width: 1050px) {
     #projects {
-        height: 860px;
+        height: 825px;
     }
     .card-title {
         font-size: 1rem;
@@ -579,9 +608,15 @@ hr {
         margin-right: -9.5rem;
         width: 25px;
     }
+    .card {
+        height: 28rem;
+    }
 }
 
 @media (max-width: 768px) {
+    #projects {
+        height: 810px;
+    }
     .card-text {
         font-size: 0.75rem;
     }
@@ -591,11 +626,23 @@ hr {
     .carousel-control-next-icon {
         margin-right: -7.5rem;
     }
+    .card {
+        height: 26rem;
+    }
+}
+
+@media (max-width: 540px) {
+    #projects {
+        height: 795px;
+    }
+    .card {
+        height: 27rem;
+    }
 }
 
 @media (max-width: 500px) {
     #projects {
-        height: 815px;
+        height: 805px;
     }
     .card {
         height: 26rem;
@@ -614,7 +661,7 @@ hr {
 
 @media (max-width: 375px) {
     #projects {
-        height: 790px;
+        height: 740px;
     }
     .card-link {
         font-size: 0.6rem;
@@ -624,6 +671,15 @@ hr {
     }
     .card-text {
         font-size: 0.65rem;
+    }
+    .card {
+        height: 23.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-text {
+        font-size: 0.6rem;
     }
 }
 
