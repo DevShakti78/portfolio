@@ -53,7 +53,7 @@ h1 {
 }
 
 #name {
-    font-size: 5.5rem;
+    font-size: 5.3rem;
     margin-top: 3rem;
     color: rgb(255, 164, 128);
     font-weight: 500;
@@ -215,14 +215,13 @@ i {
 .img-caption {
     font-family: "Playfair Display", serif;
     font-size: 0.75rem;
-    font-weight: 800;
     color: #423e3a;
     padding-top: 10px;
 }
 
-.empty {
+/* .empty {
     display: none;
-}
+} */
 
 #spin:after {
     content: "problem_solver == true";
@@ -336,9 +335,7 @@ hr {
         margin-top: 0.5rem;
     }
     .img-caption {
-        font-size: 0.55rem;
         width: 100%;
-        /* need to fix img caption on mobile */
     }
     #about-para {
         width: 97%;
@@ -725,6 +722,7 @@ a:hover {
     border-top-color: #9da7a6 !important;
 }
 
+/* Media queries for contact section */
 @media (max-width: 540px) {
     #contact {
         background-size: 280%;
