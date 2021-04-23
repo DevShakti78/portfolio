@@ -113,3 +113,8 @@ $(window).on("resize", function () {
 
 // animate on scroll library
 AOS.init();
+
+// enable the tooltip
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});

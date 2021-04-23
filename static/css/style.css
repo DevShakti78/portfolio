@@ -87,7 +87,7 @@ h1 {
 }
 
 .navbar {
-    padding: 5px 16px;
+    padding: 2px 16px;
 }
 
 #nav-logo,
@@ -107,8 +107,8 @@ h1 {
 }
 
 #logo {
-    margin-left: -12px;
-    margin-top: -4px;
+    margin-left: -14px;
+    margin-top: -2px;
 }
 
 /* Media queries for general styling and intro section */
@@ -630,11 +630,11 @@ hr {
 /* Contact section */
 #contact {
     background: linear-gradient(
-            rgba(255, 255, 255, 0.76),
-            rgba(255, 255, 255, 0.76)
+            rgba(255, 255, 255, 0.78),
+            rgba(255, 255, 255, 0.78)
         ),
         url(../images/footerbackground.png);
-    background-size: cover;
+    background-size: 125%;
 }
 
 a {
@@ -650,9 +650,28 @@ a:hover {
     text-decoration: none;
 }
 
+.tooltip-inner {
+    background-color: #9da7a6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+}
+
+.tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: #9da7a6 !important;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+    border-left-color: #9da7a6 !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: #9da7a6 !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+    border-top-color: #9da7a6 !important;
+}
+
 @media (max-width: 540px) {
     #contact {
-        background-size: 250%;
+        background-size: 280%;
     }
 }
 
