@@ -102,5 +102,19 @@ $(window).on("resize", function () {
     }
 });
 
+// removes image caption on mobile view
+$(window).on("resize", function () {
+    let win = $(this);
+    if (win.width() < 540) {
+        $(".img-caption").removeClass("img-caption").addClass("empty pb-5");
+        $("h3").removeClass("pt-2").addClass("pt-5");
+    }
+});
+
 // animate on scroll library
 AOS.init();
+
+// enable the tooltip
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});

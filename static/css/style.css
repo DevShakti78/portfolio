@@ -27,7 +27,7 @@ p {
     border: rgb(255, 175, 151) solid 1px;
     font-family: "Montserrat", sans-serif;
     font-size: 0.85rem;
-    padding: 0.7rem 1.9rem;
+    padding: 0.6rem 1.8rem;
     border-radius: 5px;
 }
 
@@ -54,7 +54,7 @@ h1 {
 
 #name {
     font-size: 5rem;
-    padding-top: 3rem;
+    margin-top: 3rem;
     color: rgb(255, 164, 128);
     font-weight: 500;
     padding-bottom: 0.8rem;
@@ -87,7 +87,7 @@ h1 {
 }
 
 .navbar {
-    padding: 5px 16px;
+    padding: 2px 16px;
 }
 
 #nav-logo,
@@ -106,9 +106,17 @@ h1 {
     color: #423e3a;
 }
 
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover {
+    color: rgb(255, 164, 128) !important;
+    font-weight: bold;
+}
+
 #logo {
-    margin-left: -12px;
-    margin-top: -4px;
+    margin-left: -14px;
+    margin-top: -2px;
 }
 
 /* Media queries for general styling and intro section */
@@ -204,7 +212,7 @@ i {
     padding-left: 0px 50px 0px 0px;
 }
 
-#img-caption {
+.img-caption {
     font-family: "Playfair Display", serif;
     font-size: 0.75rem;
     font-weight: 800;
@@ -212,9 +220,35 @@ i {
     padding-top: 10px;
 }
 
+.empty {
+    display: none;
+}
+
 #spin:after {
-    content: "";
-    animation: spin 8s linear infinite;
+    content: "problem_solver == true";
+    animation: spin 8s infinite;
+    -webkit-animation: spin 8s infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        content: "problem_solver == true";
+    }
+    20% {
+        content: "motivated == true";
+    }
+    40% {
+        content: "passionate == true";
+    }
+    60% {
+        content: "creative == true";
+    }
+    80% {
+        content: "hard_worker == true";
+    }
+    100% {
+        content: "problem_solver == true";
+    }
 }
 
 @keyframes spin {
@@ -236,10 +270,6 @@ i {
     100% {
         content: "problem_solver == true";
     }
-}
-
-#spin {
-    display: inline-block;
 }
 
 hr {
@@ -286,7 +316,7 @@ hr {
         max-width: 180px;
         margin-top: 0rem;
     }
-    #img-caption {
+    .img-caption {
         font-size: 0.7rem;
         width: 115%;
     }
@@ -305,8 +335,8 @@ hr {
         max-width: 230px;
         margin-top: 0.5rem;
     }
-    #img-caption {
-        font-size: 0.75rem;
+    .img-caption {
+        font-size: 0.55rem;
         width: 100%;
         /* need to fix img caption on mobile */
     }
@@ -561,7 +591,7 @@ hr {
 /* Media queries for projects section */
 @media (max-width: 1050px) {
     #projects {
-        height: 860px;
+        height: 825px;
     }
     .card-title {
         font-size: 1rem;
@@ -578,9 +608,15 @@ hr {
         margin-right: -9.5rem;
         width: 25px;
     }
+    .card {
+        height: 28rem;
+    }
 }
 
 @media (max-width: 768px) {
+    #projects {
+        height: 810px;
+    }
     .card-text {
         font-size: 0.75rem;
     }
@@ -590,11 +626,23 @@ hr {
     .carousel-control-next-icon {
         margin-right: -7.5rem;
     }
+    .card {
+        height: 26rem;
+    }
+}
+
+@media (max-width: 540px) {
+    #projects {
+        height: 795px;
+    }
+    .card {
+        height: 27rem;
+    }
 }
 
 @media (max-width: 500px) {
     #projects {
-        height: 815px;
+        height: 805px;
     }
     .card {
         height: 26rem;
@@ -613,7 +661,7 @@ hr {
 
 @media (max-width: 375px) {
     #projects {
-        height: 790px;
+        height: 740px;
     }
     .card-link {
         font-size: 0.6rem;
@@ -624,16 +672,25 @@ hr {
     .card-text {
         font-size: 0.65rem;
     }
+    .card {
+        height: 23.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .card-text {
+        font-size: 0.6rem;
+    }
 }
 
 /* Contact section */
 #contact {
     background: linear-gradient(
-            rgba(255, 255, 255, 0.76),
-            rgba(255, 255, 255, 0.76)
+            rgba(255, 255, 255, 0.78),
+            rgba(255, 255, 255, 0.78)
         ),
         url(../images/footerbackground.png);
-    background-size: cover;
+    background-size: 125%;
 }
 
 a {
@@ -649,9 +706,28 @@ a:hover {
     text-decoration: none;
 }
 
+.tooltip-inner {
+    background-color: #9da7a6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+}
+
+.tooltip.bs-tooltip-right .arrow:before {
+    border-right-color: #9da7a6 !important;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+    border-left-color: #9da7a6 !important;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+    border-bottom-color: #9da7a6 !important;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+    border-top-color: #9da7a6 !important;
+}
+
 @media (max-width: 540px) {
     #contact {
-        background-size: 250%;
+        background-size: 280%;
     }
 }
 
