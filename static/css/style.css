@@ -37,8 +37,8 @@ p {
     font-size: 18px;
     font-family: sans-serif;
     text-decoration: none;
-    color: red;
-    border: 2px solid orange;
+    color: darkblue;
+    border: 2px solid black;
     letter-spacing: 2px;
     text-align: center;
     position: relative;
@@ -63,11 +63,12 @@ p {
     background-color: red;
   }
 #main-btn {
-    border: rgb(255, 175, 151) solid 1px;
+    border: orange solid 1px;
     font-family: "Montserrat", sans-serif;
     font-size: 0.85rem;
     padding: 0.6rem 1.8rem;
     border-radius: 5px;
+    background-color: darkblue;
 }
 
 #main-btn:focus,
@@ -94,14 +95,14 @@ h1 {
 #name {
     font-size: 5.3rem;
     margin-top: 3rem;
-    color: rgb(255, 164, 128);
+    color: darkblue;
     font-weight: 500;
     padding-bottom: 0.8rem;
 }
 
 #pronounce {
     font-size: 1.8rem;
-    color: rgb(255, 164, 128);
+    color: darkblue;
     margin-bottom: 1.5rem;
     font-weight: 500;
     font-weight: lighter;
@@ -134,7 +135,7 @@ h1 {
 #nav-link-2,
 #nav-link-3,
 #nav-link-4 {
-    color: #423e3a;
+    color: darkblue;
 }
 
 .nav-link:hover {
