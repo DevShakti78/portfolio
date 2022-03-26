@@ -819,7 +819,7 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
    column-gap: 50px;
-   margin-left: 200px;
+   margin-left: 180px;
 }
 
 @media (max-width:375px){
