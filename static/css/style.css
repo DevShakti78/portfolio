@@ -767,12 +767,14 @@ a:hover {
     #contact {
         background-size: 280%;
     }
+    
 }
 
 @media (max-width: 375px) {
     a {
         padding: 0rem 0.8rem;
     }
+   
 }
 
 /* Background for intro section - messes up format unless I put at the bottom*/
@@ -810,3 +812,29 @@ a:hover {
         background-size: cover;
     }
 }
+
+.skills-container{
+    display:flex;
+    padding: 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+   column-gap: 50px;
+   margin-left: 280px;
+}
+
+@media (max-width:375px){
+    .skills-container{
+
+display: inline-flex;
+margin-left: -50px;
+    }
+}
+
+
+
+/* 
+.carousel-control-next
+{
+    width: 6%;
+    height:50px
+} */
