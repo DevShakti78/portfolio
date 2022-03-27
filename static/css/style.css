@@ -817,16 +817,17 @@ a:hover {
     display:flex;
     padding: 5%;
     justify-content: center;
-    flex-wrap: wrap;
-   column-gap: 50px;
-   margin-left: 180px;
+    width: 655px;
+    margin: auto;
+    column-gap: 70px;
+  
 }
 
 @media (max-width:375px){
     .skills-container{
 
-display: inline-flex;
-margin-left: -50px;
+display: grid;
+grid-template-columns:repeat(2,1fr)
     }
 }
 
