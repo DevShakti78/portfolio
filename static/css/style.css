@@ -831,7 +831,13 @@ grid-template-columns:repeat(2,1fr)
     }
 }
 
+@media (max-width:450px){
+    .skills-container{
 
+display: grid;
+grid-template-columns:repeat(2,1fr)
+    }
+}
 
 /* 
 .carousel-control-next
